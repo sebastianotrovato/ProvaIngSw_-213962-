@@ -70,8 +70,11 @@ public class FunnyAlgorithms {
      * @throws UnsupportedOperationException
      */
     public int stringToIntConverter(String number) throws UnsupportedOperationException {
-        throw new UnsupportedOperationException("To be implemented");
+        if (Integer.valueOf(number)<-32768 || Integer.valueOf(number)>32767){
+            throw new UnsupportedOperationException("Invalid number");
+        }
+        Integer result = Integer.valueOf(number);
+        return result;
     }
-
 }
 
