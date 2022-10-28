@@ -5,6 +5,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.joda.time.DateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 
 import static java.util.Arrays.asList;
@@ -58,7 +59,13 @@ public class FunnyAlgorithmsTest {
 
     @Test
     public void shouldAnswerWithTrueForSelectionSort(){
-        
+        DateTime inizio = new DateTime();
+        System.out.println(inizio);
+        FunnyAlgorithms f = new FunnyAlgorithms();
+        f.selectionSort(numSelectionSort,1);
+        assertEquals(Arrays.toString(numSelectionSort),(Arrays.toString(selectionOrder)));
+        DateTime fine = new DateTime();
+        System.out.println(fine);
     }
 
 }
