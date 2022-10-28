@@ -68,4 +68,15 @@ public class FunnyAlgorithmsTest {
         System.out.println(fine);
     }
 
+    @Test
+    public void shouldAnswerWithTrueConverter(){
+        DateTime inizio = new DateTime();
+        System.out.println(inizio);
+        FunnyAlgorithms f = new FunnyAlgorithms();
+        int result = f.stringToIntConverter(numToConvert);
+        assertEquals(result,correct);
+        DateTime fine = new DateTime();
+        System.out.println(fine);
+    }
+
 }
